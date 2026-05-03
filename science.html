@@ -1,27 +1,73 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>دروس العلوم</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دروس العلوم - الأستاذ عمرو علي</title>
     <style>
-        body { background-color: #e8f5e9; font-family: 'Segoe UI', sans-serif; padding: 30px; }
-        nav { background-color: #2c3e50; padding: 15px; text-align: center; border-radius: 10px; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; }
-        .lesson { background: white; padding: 20px; border-radius: 10px; margin-top: 20px; border-right: 5px solid #2e7d32; }
-        h1 { color: #2e7d32; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f0f2f5;
+            text-align: center;
+            direction: rtl;
+        }
+        /* اللون الكحلي الموحد لكل المنصة */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 25px 10px;
+        }
+        header h1 {
+            font-size: 1.4rem;
+            line-height: 1.5;
+        }
+        /* المنيو بـ الثلاث خانات */
+        nav {
+            background: white;
+            padding: 15px;
+            border-bottom: 2px solid #ddd;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            margin: 5px 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .main-box {
+            background: white;
+            max-width: 90%;
+            width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 { color: #27ae60; margin-bottom: 15px; font-size: 1.6rem; } /* أخضر لتمييز قسم العلوم */
+        p { font-size: 1.2rem; line-height: 1.7; margin: 10px 0; }
     </style>
 </head>
 <body>
-  <nav style="background-color: #2c3e50; padding: 15px; text-align: center; border-radius: 10px; margin-bottom: 30px;">
-    <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">الرئيسية</a>
-    <a href="science.html" style="color: white; text-decoration: none; margin: 0 15px;">دروس العلوم</a>
-    <a href="tech.html" style="color: white; text-decoration: none; margin: 0 15px;">دروس الحاسب الآلي والتكنولوجيا</a>
-</nav>
 
-    <h1>مكتبة دروس العلوم</h1>
-    <div class="lesson">
-        <h2>درس الخلية</h2>
-        <p>هنا سيتم وضع فيديو الشرح قريباً.</p>
+    <header>
+        <h1>قسم دروس العلوم - الأستاذ عمرو علي</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="science.html">دروس العلوم</a>
+        <a href="tech.html">دروس التكنولوجيا</a> 
+    </nav>
+
+    <div class="main-box">
+        <h2>مرحباً بكم في معمل العلوم الرقمي</h2>
+        <p>هنا سيتم رفع فيديوهات وشروحات مادة العلوم قريباً بإذن الله.</p>
+        <p>يسعدني تواصلكم ومتابعة الدروس أولاً بأول.</p>
     </div>
+
 </body>
 </html>
